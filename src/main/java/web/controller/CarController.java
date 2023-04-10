@@ -4,16 +4,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import web.service.carService;
+import web.service.CarServiceImpl;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-public class HelloController {
-	private carService carservice;
+public class CarController {
+	private CarServiceImpl carservice;
 
-	public HelloController(carService carservice) {
+	public CarController(CarServiceImpl carservice) {
 		this.carservice = carservice;
 	}
 
